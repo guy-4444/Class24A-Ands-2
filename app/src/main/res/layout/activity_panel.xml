@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Panel">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/panel_LBL_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:id="@+id/panel_BTN_info"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintDimensionRatio="3:2"
+        android:text="Info"
+        app:strokeWidth="3dp"
+        app:strokeColor="@color/main_text"
+        android:textColor="@color/main_text"
+        app:layout_constraintEnd_toEndOf="@+id/panel_LBL_info"
+        app:layout_constraintStart_toStartOf="@+id/panel_LBL_info"
+        app:layout_constraintTop_toBottomOf="@+id/panel_LBL_info" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:id="@+id/panel_BTN_start"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintDimensionRatio="3:2"
+        android:text="Start"
+        app:strokeWidth="3dp"
+        app:strokeColor="@color/main_text"
+        android:textColor="@color/main_text"
+        app:layout_constraintEnd_toEndOf="@+id/panel_LBL_info"
+        app:layout_constraintStart_toStartOf="@+id/panel_LBL_info"
+        app:layout_constraintTop_toBottomOf="@+id/panel_BTN_info" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/panel_BTN_stop"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:text="Stop"
+        android:textColor="@color/main_text"
+        app:layout_constraintDimensionRatio="3:2"
+        app:layout_constraintEnd_toEndOf="@+id/panel_LBL_info"
+        app:layout_constraintStart_toStartOf="@+id/panel_LBL_info"
+        app:layout_constraintTop_toBottomOf="@id/panel_BTN_start"
+        app:strokeColor="@color/main_text"
+        app:strokeWidth="3dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
